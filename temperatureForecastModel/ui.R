@@ -34,25 +34,29 @@ fluidPage(
                 br(),
                 h3("Forecasted values of each independent variable"),
                 h4("Radiative forcing from carbon dioxide"),
+                h4("CO2 ~ quadradic trend + season"),
                 plotOutput("CO2Plot"),
                 h4("Solar output"),
+                h4("Irradiance ~ trend + season + fourier(period = 132, K = 66)"),
                 plotOutput("solarPlot"),
                 h4("El Niño/Southern Oscillation"),
+                h4("ENSO ~ trend + season + fourier(period = 60, K = 30"),
                 plotOutput("ENSOPlot"),
                 h4("Aerosols"),
+                h4("AOD ~ trend + season")
                 plotOutput("aerosolsPlot")
         )        
     ),
     hr(),
     h5("Created by: Jim Milks"),
     br(),
-    "8 May 2023",
+    "10 May 2023",
     br(),
     a(actionButton(inputId = "email1", label = "Contact Admin", 
                    icon = icon("envelope", lib = "font-awesome")),
       href = "mailto: jrmilks@gmail.com"),
     br(),
     "Code available at:",
-    a(href = "https://github.com/jrmilks74/global-temperature-trend-calculator/tree/main", "https://github.com/jrmilks74/global-temperature-trend-calculator/tree/main")
+    a(href = "https://github.com/jrmilks74/global_temperature_forecast/tree/main", "https://github.com/jrmilks74/global_temperature_forecast/tree/main")
     
 )
