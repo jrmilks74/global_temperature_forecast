@@ -1,2 +1,1 @@
-
-A collection of forecasting models, ranging from naive to machine learning, predicting global mean temperature over the next twenty years.
+This Shiny app uses multiple linear regression to fit the model Global Mean Temperature ~ Atmospheric CO2 levels + Solar irradiance + El Niño/Southern Oscillation + Aerosol Optical Depth. I then use time series analysis to forecast future behavior of each predictor variable then use those forecasts to predict future behavior of global mean temperature using the main model above.
