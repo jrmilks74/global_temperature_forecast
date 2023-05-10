@@ -43,7 +43,7 @@ fluidPage(
                 h4("ENSO ~ trend + season + fourier(period = 60, K = 30"),
                 plotOutput("ENSOPlot"),
                 h4("Aerosols"),
-                h4("AOD ~ trend + season")
+                h4("AOD ~ trend + season"),
                 plotOutput("aerosolsPlot")
         )        
     ),
