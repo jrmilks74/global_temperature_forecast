@@ -105,4 +105,4 @@ aerosols_fit <- global_temp %>%
         model(TSLM(Aerosols ~ trend() + season()))
 
 ENSO_fit <- global_temp %>%
-        model(TSLM(ENSO ~ trend() + season() + fourier(period = 60, K = 30)))
+        model(NNETAR(ENSO))
