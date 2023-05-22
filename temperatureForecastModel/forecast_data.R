@@ -105,4 +105,4 @@ aerosols_fit <- global_temp %>%
         model(TSLM(Aerosols ~ trend() + season()))
 
 ENSO_fit <- global_temp %>%
-        model(NNETAR(ENSO))
+        model(ARIMA(ENSO ~ pdq(d = 0)))
