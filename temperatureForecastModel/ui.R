@@ -40,7 +40,7 @@ fluidPage(
                 h4("Irradiance ~ trend + season + fourier(period=132, K=66)"),
                 plotOutput("solarPlot"),
                 h4("El Niño/Southern Oscillation"),
-                h4("ENSO ~ trend + season + fourier(period=60, K=30"),
+                h4("Neural Net model"),
                 plotOutput("ENSOPlot"),
                 h4("Aerosols"),
                 h4("AOD ~ trend + season"),

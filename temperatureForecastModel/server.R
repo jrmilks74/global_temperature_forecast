@@ -98,10 +98,10 @@ shinyServer(function(input, output) {
         })
         
         output$ENSOPlot <- renderPlot({
-                ENSO_fc <- forecast(ENSO_fit, h = h_selected())
+                ENSO_fc <- forecast(ENSO_fit, h = h_selected)
                 pENSO <- global_temp %>%
                         autoplot(ENSO) +
-                        autolayer(ENSO_fc) +
+                        autolayer(ENSO_fc)
                         theme_bw() +
                         labs(title = "Predicted ENSO",
                              x = "Year",
